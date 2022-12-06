@@ -74,6 +74,7 @@
     text-align: center;
   }
   .principalCaratula{
+    padding-top: 120px;
     width: 40%;
     margin:auto;
     margin-top: 10px;
@@ -96,6 +97,7 @@
         width:60%;
       }
       .principalCaratula{
+        padding-top: 120px;
         height: 80vh;
         width: max-content;
         margin:auto;
