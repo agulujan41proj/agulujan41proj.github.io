@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@300&display=swap');
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --backgroundBlack:#000000;
+  }
+  body{
+    margin:0;
+    padding:0;
+    background-color: var(--backgroundBlack);
+  }
+  .header_menu{
+    height: 120px;
+    z-index: 60;
+    box-shadow: 5px 5px 5px var(--white);
+  }
+  .menu{
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+    position: fixed;
+    width: 100%;
+    
+  }
+  .logoContainer{
+    width: 25%;
+    display: flex;
+    margin-left: 10px;
+  }
+  .logoContainer img{
+    width:20%;
+  }
+  .logoContainer h1{
+    margin-left: 20px;
+    color: white;
+    font-size: 2.6em;
+    font-family: 'Tourney', cursive;
+
+  }
+ 
+  
+  .nav_menu{
+      width: 70%;
+      display: flex;
+      justify-content: center;
+  }
+  .nav_menu ul{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+
+    
+  }
+  .nav_menu li{
+   
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+  }
+  .nav_menu a{
+    
+    text-decoration: none;
+    font-size: 1.9em;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: var(--white); 
+    text-align: center;
+  }
+  .principalCaratula{
+    width: 40%;
+    margin:auto;
+    margin-top: 10px;
+    opacity: 0.3;
+    
+  }
+  .principalCaratula img{
+  
+    height:80vh;
+  }
+  .menu input{
+    display: none;
+  }
+
+  @media screen  and (max-width:1000px){
+      .nav_menu{
+        display: none;
+      }
+      .logoContainer{
+        width:60%;
+      }
+      .principalCaratula{
+        height: 80vh;
+        width: max-content;
+        margin:auto;
+      }
+      .principalCaratula img{
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .menu input{
+          display: block;
+          width:30px;
+          margin-right: 20px;
+      }
+
+  }
